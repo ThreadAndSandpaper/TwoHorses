@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Horses Games | Wayward Trader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Convergence&display=swap" rel="stylesheet">
+    
+    
+    
+    <style>
+        /* Base typography & page resets */
+        body {
+            margin: 0;
+            padding: 0 0 320px 0; /* Adjust '120px' up or down based on how tall your footer image is */
+            font-family: "Convergence", sans-serif;
+            font-size: 17px;
+            line-height: 1.6;
+            color: #222;
+            background-color: #fff;
+        }
+
+        /* Centered Image Containers */
+        #myLogo {
+            width: 100%;
+            height: auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0;
+        }
+        
+        #myBanner, 
+        {
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+
+        #myDiv {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Keeps it layered on top of scrolling content */
+            pointer-events: none; /* Allows clicks to pass through transparent areas */
+        }
+        #myLogo img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        #myBanner img, 
+        {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            
+        }
+
+      #myDiv img {
+            width: 100%;
+            height: auto;
+            display: block;
+            pointer-events: auto; /* Keeps the image itself interactive if needed */
+        }
+        /* Main Content Box */
+        .box {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* Intro Quote / Tagline */
+        .friends {         
+            margin: 20px auto 30px auto;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+            
+        /* Two-Column Grid */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 15px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .left-column {
+            margin-right: 5px;
+        }
+
+        .right-column {
+            margin-left: 5px;
+        }
+
+        .game-title {
+            font-family: "Berkshire Swash", serif;
+            font-size: clamp(3rem, 8vw, 72pt);
+            font-weight: normal;
+            color: #222; /* Adjust color if you want it to match your theme */
+            margin: 30px 0 15px 0;
+            line-height: 1.1;
+        }
+        /* Game Description Block */
+        .game-description {
+            margin-top: 25px;
+            margin-bottom: 40px;
+            text-align: left; /* Reads much cleaner than centered paragraphs for long text */
+            line-height: 1.7;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
+                margin: 0;
+            }
+            .friends {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .game-description {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="myLogo">
+        <img src="Images/logo.png" alt="Two Horses Games Logo">
+    </div>
+
+    <div class="box">
+        <div class="friends">
+            When two horses like and trust each other, they can pull four times what each could alone. 
+            Emily and Jane are two horses that are friends.
+        </div>
+        
+        <div class="container">
+            <div class="column left-column">            
+                <p><b>Emily</b> likes big picture stuff. She’s in charge of the narrative and characters. She is writing dialogue, art directing the places, and painting landscapes.</p>
+            </div>
+            <div class="column right-column">            
+                <p><b>Jane</b> likes fiddly little stuff. She’s in charge of the gameplay and making everything work. She is writing code, creating user interfaces, and painting plants and houses.</p>
+            </div>
+        </div>      
+
+        <div id="myBanner">
+            <h1 class="game-title">Wayward Trader</h1>
+        </div>
+
+        <div class="game-description">
+            Caravans trundle through handpainted parallaxing landscapes as they move between fairy towns. Every town is populated by unique fey, from insectoid pixies, to talking animals, to strange speaking monoliths. Trade in strange goods—no wood or stone here, fairies buy and sell emotions and they pay with baby teeth. <i>Wayward Trader</i> lets you explore a strange, singular, and handcrafted world, all while you do something productive with the rest of your screen.
+        </div>
+    </div>
+
+    <div id="myDiv">
+        <img src="Images/footer.png" alt="Footer graphic">
+    </div>
+
+</body>
+</html>

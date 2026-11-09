@@ -1,0 +1,70 @@
+       <style>
+   		
+   	 #myDiv
+               {
+               height: auto;
+               width: auto;
+               }
+        #myDiv img
+               {
+               max-width: 100%;
+               max-height: 100%;
+               margin: auto;
+               display: block;
+               }
+   	.box {
+     		font-family: "Lucida Sans", sans-serif;
+     		font-size: 17px;
+     		align-content: center;
+   		margin-bottom: 7px;
+   		margin-top: 20px;	
+     		margin-right: 100px;
+     		margin-left: 100px;
+   
+   }
+   		.center {
+     		display: block;
+     		margin-left: auto;
+     		margin-right: auto;
+   		margin-bottom: 20px;
+     		
+   }
+   		
+   	div {
+     		
+     		text-align: center;
+   		image-orientation: center; 
+   	}
+   
+   	
+        .container {
+           display: flex;
+           flex-wrap: wrap;
+       }
+        .column {
+           flex: 1;
+           padding: 10px;
+           box-sizing: border-box;
+       }
+           .left-column {
+               text-align: center;
+   			margin-right: 5px;
+       }
+           .right-column {padding: 
+               text-align: center;
+   			margin-left: 5px;
+   	}
+           @media (max-width: 768px) {
+           .column	{
+   			flex: 100%;
+   	}
+   		}
+   	img {
+   		align-content: center;
+   	}
+   		.friends  {			
+   		margin-left: 50 px;
+   		margin-right: 50px;
+   	}
+   			
+    </style>
